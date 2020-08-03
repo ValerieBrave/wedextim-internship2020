@@ -1,0 +1,30 @@
+{
+  "TESTUSER": "Benutzer testen",
+  "USERSLIST": {
+    "ID": "ICH WÜRDE",
+    "MAIL": "Email",
+    "FIRSTNAME": "Vorname",
+    "LASTNAME": "Nachname",
+    "ROLE":"Rolle",
+    "STATUS":"Status"
+  },
+  "AEFORM": {
+    "EDITU": "Benutzer bearbeiten",
+    "ADDU": "Nutzer hinzufügen",
+    "USERINFO": "Nutzerinformation",
+    "LSTFRST": "Nachname / Vorname",
+    "MAIL": "Email",
+    "ROLE":"Rolle",
+    "STATUS":"Status",
+    "STATUSA":"Aktiv",
+    "STATUSU":"Inaktiv",
+    "PASS": "Passwort",
+    "PASSREP": "Passwortwiederholung",
+    "PASSNE": "Passwörter sind nicht gleich!"
+  },
+  "ROLES": {
+    "HR": "HR",
+    "USER": "Benutzer",
+    "ADMIN": "Admin"
+  }
+}

@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+/* @import "~pretty-checkbox/src/pretty-checkbox.scss"; */
+
+html, body {
+    
+    height: 100%;
+    margin: auto;
+    border: 1px solid black;
+}
+body
+{
+    width: 90%;
+}

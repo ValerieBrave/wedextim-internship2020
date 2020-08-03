@@ -1,0 +1,27 @@
+<!-- ADD ONE MORE CONTAINER FOR HORIZONTAL BLOCKS -->
+<div class="h-100 main-container">
+    <div class="main-header">
+        
+        <span style="margin-right: 1%;" >{{'TESTUSER' | translate}}</span>
+        <img src="assets/icons/next.svg" height="75%" style="margin-right: 1%;"/>
+    </div>
+    <div class="body-container">
+        <div class=" menu-stripe">
+            <button style="background-color: white; border: none;" (click)="show_calculate()">
+                <img src="assets/icons/list.svg" width="80%"/>
+            </button>
+            <button style="background-color: white; border: none;" (click)="show_userslist()">
+                <img src="assets/icons/customers_selected.svg" width="80%"/>
+            </button>
+            <button style="background-color: white; border: none; font-weight: bold;" (click)="switch_lang('en')">ENG</button>
+            <button style="background-color: white; border: none; font-weight: bold;" (click)="switch_lang('de')">DE</button>
+        </div>
+        <div class="working-container">
+            <div class="working-body">
+                <router-outlet></router-outlet>
+                <ng-container #views></ng-container>
+                <ng-template #workingbody></ng-template>
+            </div>
+        </div>
+    </div>
+</div>

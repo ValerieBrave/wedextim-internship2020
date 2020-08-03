@@ -1,0 +1,74 @@
+<form class="adduser-container" [formGroup]="reactive_addform">
+    <div class="adduser-workpanel">
+        <span style="color: white; font-size: large; margin-left: 1%;">{{ 'AEFORM.ADDU' | translate}}</span>
+        <div style="margin-right: 1%;">
+            <button style="border: none; background-color: rgb(90, 90, 90);" [disabled]="!reactive_addform.valid" (click)="addform_submit()">
+                <img src="assets/icons/save-edit.svg" height="25px" />
+            </button>
+            <button style="border: none; background-color: rgb(90, 90, 90);" (click)="addform_close()">
+                <img src="assets/icons/cancel-edit.svg" height="25px"/>
+            </button>
+        </div>
+    </div>
+    <div class="addforms-container">
+        <div class="addform-section">
+            <div class="section-header">
+                <span style="color: white; font-size: larger;">{{'AEFORM.USERINFO' | translate}}</span>
+            </div>
+            <div class="addform">
+                    <div class="addform-row">
+                        <span style="width: 50%;">{{'AEFORM.LSTFRST' | translate}}</span>
+                        <div class="separate-input-block">
+                            <input class="add-inputs" type="text"  formControlName="lastName"  required>
+                            <input class="add-inputs" type="text" formControlName="firstName"  required>
+                        </div>
+                    </div>
+                    <div class="addform-row">
+                        <span style="width: 50%;">{{'AEFORM.MAIL' | translate}}</span>
+                        <input class="add-inputs" type="email"  formControlName="email"  required email>  
+                    </div>
+                    <div class="addform-row">
+                        <span style="width: 50%;">{{'AEFORM.ROLE' | translate}}</span>
+                        <select style="width: 45%;" formControlName="role"  required>
+                            <option>HR</option>
+                            <option >User</option>
+                            <option>Admin</option>
+                        </select>
+                    </div>   
+                    <div class="addform-row">
+                        <span style="width: 50%;">{{'AEFORM.STATUS' | translate}}</span>
+                        <div style="width: 45%;">
+                            <div class="pretty p-switch p-fill" style="display: flex; align-items: center;">
+                                <span style="margin-right: 2px;"> {{'AEFORM.STATUSU' | translate}}</span>
+                                <input type="checkbox" checked="true" formControlName="status"  />
+                                <div class="state p-success">
+                                    <label> {{'AEFORM.STATUSA' | translate}}</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        
+
+        <div class="addform-section">
+            <div class="section-header">
+                <span style="color: white; font-size: larger;">{{'AEFORM.PASS' | translate}}</span>
+            </div>
+            <div class="addform">
+                <div class="addform-row">
+                    <span style="width: 50%;">{{'AEFORM.PASS' | translate}}</span>
+                    <input class="add-inputs" type="password"  formControlName="password"  required>
+                </div>
+                <div class="addform-row">
+                    <span style="width: 50%;">{{'AEFORM.PASSREP' | translate}}</span>
+                    <input class="add-inputs" type="password"  formControlName="password_rep"  required >
+                </div>
+                <div class="addform-row" *ngIf="reactive_addform.errors?.passwordsNotEqual">
+                    <span style="width: 50%; color: red;">{{'AEFORM.PASSNE' | translate}}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+

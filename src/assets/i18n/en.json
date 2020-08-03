@@ -1,0 +1,30 @@
+{
+  "TESTUSER": "Test user",
+  "USERSLIST": {
+    "ID": "ID",
+    "MAIL": "E-mail",
+    "FIRSTNAME": "First name",
+    "LASTNAME": "Last name",
+    "ROLE":"Role",
+    "STATUS":"Status"
+  },
+  "AEFORM": {
+    "EDITU": "Edit User",
+    "ADDU": "Add User",
+    "USERINFO": "User Information",
+    "LSTFRST": "Lastname / Firstname",
+    "MAIL": "E-mail",
+    "ROLE":"Role",
+    "STATUS":"Status",
+    "STATUSA":"Active",
+    "STATUSU":"Inactive",
+    "PASS": "Password",
+    "PASSREP": "Password repetition",
+    "PASSNE": "Passwords are not equal!"
+  },
+  "ROLES": {
+    "HR": "HR",
+    "USER": "User",
+    "ADMIN": "Admin"
+  }
+}

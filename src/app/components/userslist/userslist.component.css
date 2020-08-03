@@ -1,0 +1,16 @@
+.userslist-container
+{
+    width: 100%;
+    
+}
+.userslist-workpanel
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 50px;
+    
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

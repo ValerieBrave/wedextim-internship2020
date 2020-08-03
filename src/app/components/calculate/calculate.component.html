@@ -1,0 +1,58 @@
+<div class="calculate-container" >
+    <div class="calculate-workpanel">
+        <span style="color: white; font-size: large; margin-left: 1%;">Salary Overview</span>
+        <button style="color: white; margin-right: 1%; border: none; background-color: rgb(90, 90, 90);">Report</button>
+    </div>
+    <div class="calcforms-container">
+        <div class="calcform-section">
+            <div class="section-header">
+                <span style="color: white; font-size: larger;">Candidate Information</span>
+            </div>
+            <form class="calcform" [formGroup]="reactive_calcform">
+                <div class="calcform-row">
+                    <span style="width: 50%;">Name, Lastname</span>
+                    <input type="text" class="calc-inputs" formControlName="cand_name">
+                </div>
+                <div class="calcform-row">
+                    <span style="width: 50%;">Date of Birth</span>
+                    <input type="date"  max="2002-01-01" min="1950-01-01" class="calc-inputs" formControlName="cand_dob">
+                </div>
+                <div class="calcform-row">
+                    <span style="width: 50%;">Employee Number</span>
+                    <input type="text"  class="calc-inputs" formControlName="cand_id">
+                </div>
+                <div class="calcform-row">
+                    <span style="width: 50%;">Function</span>
+                    <select class="calc-inputs" formControlName="cand_func">
+                        <option>Developer</option>
+                        <option>CTO</option>
+                        <option>Project Manager</option>
+                        <option>Team Lead</option>
+                    </select>
+                </div>
+                <div class="calcform-row">
+                    <span style="width: 50%;">Experience</span>
+                    <input class="calc-inputs" type="number" min="1" max="17" formControlName="cand_exp">
+                </div>
+                <div class="calcform-row">
+                    <span style="width: 50%;">Region</span>
+                    <select class="calc-inputs" formControlName="cand_reg">
+                        <option>Boston</option>
+                        <option>Denver</option>
+                        <option>Los Angeles</option>
+                        <option>New York</option>
+                    </select>
+                </div>
+            </form>
+        </div>
+        <div class="calcform-section">
+            <div class="section-header">
+                <span style="color: white; font-size: larger;">Calculation Results</span>
+            </div>
+            <div style="width: 90%; display: flex; flex-direction: row; justify-content: space-between;">
+                <span>Salary</span>
+                <span>xxxx to xxxxx</span>
+            </div>
+        </div>
+    </div>
+</div>
